@@ -51,8 +51,18 @@ int main(){
 			}
 		}
 	}
+	
+	for(int i=0;i<=input1_length;i++){
+		for(int j=0;j<=input2_length;j++){
+			printf("%d ",lcs[i][j]);
+		}
+		printf("\n");
+	}
+	
 	printf("LCS的長度是%d\n", lcs[input1_length][input2_length]) ;
     printf("LCS是\n");
     print_LCS(input1_length, input2_length);
 	
+	system("pause");
+	return 0;
 } 
